@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Ficha.Models.JogadorModel>
+
+@{
+    ViewBag.Title = "Criação Ficha de Personagem";
+}
+
+<h2>Criação Ficha de Pesonagem</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Celular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Personagem)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Celular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Personagem)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }, new { @class= "btn btn-warning" })*@
+            @Html.ActionLink("Editar","Edit", new { id=item.Id}, new {@class ="btn btn-primary btn-large" })
+            @Html.ActionLink("Detalhes", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
