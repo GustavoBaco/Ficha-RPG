@@ -137,12 +137,21 @@
     <Compile Include="Migrations\202204021731525_initial.designer.cs">
       <DependentUpon>202204021731525_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204031956314_segundo.cs" />
+    <Compile Include="Migrations\202204031956314_segundo.Designer.cs">
+      <DependentUpon>202204031956314_segundo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204032003485_terceiro.cs" />
+    <Compile Include="Migrations\202204032003485_terceiro.Designer.cs">
+      <DependentUpon>202204032003485_terceiro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ClasseModel.cs" />
     <Compile Include="Models\JogadorModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\aa.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -208,6 +217,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202204021731525_initial.resx">
       <DependentUpon>202204021731525_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204031956314_segundo.resx">
+      <DependentUpon>202204031956314_segundo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204032003485_terceiro.resx">
+      <DependentUpon>202204032003485_terceiro.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

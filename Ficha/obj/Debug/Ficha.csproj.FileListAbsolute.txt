@@ -83,3 +83,5 @@ C:\Users\gmanc\source\repos\Ficha\Ficha\bin\EntityFramework.xml
 C:\Users\gmanc\source\repos\Ficha\Ficha\bin\EntityFramework.SqlServer.xml
 C:\Users\gmanc\source\repos\Ficha\Ficha\obj\Debug\Ficha.Migrations.initial.resources
 C:\Users\gmanc\source\repos\Ficha\Ficha\obj\Debug\Ficha.csproj.GenerateResource.cache
+C:\Users\gmanc\source\repos\Ficha\Ficha\obj\Debug\Ficha.Migrations.segundo.resources
+C:\Users\gmanc\source\repos\Ficha\Ficha\obj\Debug\Ficha.Migrations.terceiro.resources
