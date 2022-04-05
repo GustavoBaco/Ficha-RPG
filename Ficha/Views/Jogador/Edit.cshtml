@@ -34,10 +34,10 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Emai, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Emai, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Emai, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -51,7 +51,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-primary"/>
+                <input type="submit" value="Salvar" class="btn btn-primary"/>
             </div>
         </div>
     </div>
@@ -64,3 +64,4 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+<footer class="navbar-fixed-bottom"><h4><strong>Alunos : Gustavo Baco Manciope e Samuel Esteves Silva</strong></h4></footer>

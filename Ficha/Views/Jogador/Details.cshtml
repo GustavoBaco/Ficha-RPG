@@ -27,11 +27,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Emai)
+            @Html.DisplayNameFor(model => model.Email)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Emai)
+            @Html.DisplayFor(model => model.Email)
         </dd>
 
         <dt>
@@ -45,6 +45,7 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary btn-large" }) |
     @Html.ActionLink("Voltar", "Index")
 </p>
+<footer class="navbar-fixed-bottom"><h4><strong>Alunos : Gustavo Baco Manciope e Samuel Esteves Silva</strong></h4></footer>

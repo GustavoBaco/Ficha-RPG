@@ -34,9 +34,9 @@ namespace Ficha.Controllers
             {
                 _contexto.Classe.Add(classes);
                 _contexto.SaveChanges();
-                return RedirectToAction("Index");
+                
             }
-            return View(classes);
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
