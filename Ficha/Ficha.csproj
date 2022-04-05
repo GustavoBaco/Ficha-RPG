@@ -145,6 +145,14 @@
     <Compile Include="Migrations\202204032003485_terceiro.Designer.cs">
       <DependentUpon>202204032003485_terceiro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204051431488_segunda.cs" />
+    <Compile Include="Migrations\202204051431488_segunda.Designer.cs">
+      <DependentUpon>202204051431488_segunda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204051434438_email.cs" />
+    <Compile Include="Migrations\202204051434438_email.Designer.cs">
+      <DependentUpon>202204051434438_email.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ClasseModel.cs" />
     <Compile Include="Models\JogadorModel.cs" />
@@ -223,6 +231,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204032003485_terceiro.resx">
       <DependentUpon>202204032003485_terceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204051431488_segunda.resx">
+      <DependentUpon>202204051431488_segunda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204051434438_email.resx">
+      <DependentUpon>202204051434438_email.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

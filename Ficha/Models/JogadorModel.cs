@@ -10,12 +10,14 @@ namespace Ficha.Models
     {
         [Key]
         public int Id { get; set; }
-
+        [Required(ErrorMessage = "Informe o nome")]
         public string Nome { get; set; }
+        [Required(ErrorMessage = "Informe o celular")]
         public string Celular { get; set; }
         
-        [Required(ErrorMessage = "E-mail inválido")]
-        public string Emai { get; set; }
+        [EmailAddress(ErrorMessage = "E-mail inválido")]
+        public string Email { get; set; }
+        [Required(ErrorMessage = "Informe o personagem")]
         public string Personagem { get; set; }
     }
 }
