@@ -174,3 +174,5 @@ C:\Users\User\Desktop\Github\Ficha RPG\Ficha-RPG\Ficha\obj\Debug\Ficha.dll
 C:\Users\User\Desktop\Github\Ficha RPG\Ficha-RPG\Ficha\obj\Debug\Ficha.pdb
 C:\Users\User\Desktop\Github\Ficha RPG\Ficha-RPG\Ficha\obj\Debug\Ficha.Migrations.segunda.resources
 C:\Users\User\Desktop\Github\Ficha RPG\Ficha-RPG\Ficha\obj\Debug\Ficha.Migrations.email.resources
+C:\Users\gmanc\source\repos\Ficha\Ficha\obj\Debug\Ficha.Migrations.segunda.resources
+C:\Users\gmanc\source\repos\Ficha\Ficha\obj\Debug\Ficha.Migrations.email.resources

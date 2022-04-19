@@ -3,7 +3,24 @@
 @{
     ViewBag.Title = "Criação Ficha Jogador";
 }
-                      
+<style>
+    body {
+        background-color: #272121;
+        color: white;
+    }
+
+    .btn-primary, btn, btn-large, .btn-primary:active, .btn-primary:visited {
+        background-color: #ECDEDE;
+        color: black;
+        border-color: white;
+    }
+
+        .btn-primary:hover {
+            background-color: #272121;
+            color: #ECDEDE;
+            border-color: white;
+        }
+</style>
                           <h2>Criação Ficha de Jogador</h2>
 
                           <p>
@@ -41,9 +58,9 @@
                                       @Html.DisplayFor(modelItem => item.Personagem)
                                   </td>
                                   <td>
-                                      @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-info btn-large" })|
-                                      @Html.ActionLink("Detalhes", "Details", new { id = item.Id }, new { @class = "btn btn-info btn-large" })|
-                                      @Html.ActionLink("Deletar", "Delete", new { id = item.Id }, new { @class = "btn btn-info btn-large" })
+                                      @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-primary btn-large" })|
+                                      @Html.ActionLink("Detalhes", "Details", new { id = item.Id }, new { @class = "btn btn-primary btn-large" })|
+                                      @Html.ActionLink("Deletar", "Delete", new { id = item.Id }, new { @class = "btn btn-primary btn-large" })
                                   </td>
                               </tr>
 }
