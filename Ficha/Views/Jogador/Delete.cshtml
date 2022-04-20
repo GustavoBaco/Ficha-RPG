@@ -9,13 +9,13 @@
         color: white;
     }
 
-    .btn-primary, btn, btn-large, .btn-primary:active .btn-primary:visited {
+    .btn-dark, btn, btn-large, .btn-dark:active .btn-dark:visited {
         background-color: #ECDEDE;
         color: black;
         border-color: white;
     }
 
-        .btn-primary:hover {
+        .btn-dark:hover {
             background-color: #272121;
             color: #ECDEDE;
             border-color: white;
@@ -65,10 +65,11 @@
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Deletar" class="btn btn-info" /> |
-            @Html.ActionLink("Voltar", "Index")
-        </div>
+<div class="form-actions no-color">
+    <input type="submit" value="Deletar" class="btn btn-dark" /> |
+    @*@Html.ActionLink("Voltar", "Index")*@
+    <a href="/jogador/index" class="btn btn-dark">Voltar</a>
+</div>
     }
 </div>
 <footer class="navbar-fixed-bottom"><h4><strong>Alunos : Gustavo Baco Manciope e Samuel Esteves Silva</strong></h4></footer>

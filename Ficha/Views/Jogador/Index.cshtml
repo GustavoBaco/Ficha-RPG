@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Ficha.Models.JogadorModel>
+﻿
+@model IEnumerable<Ficha.Models.JogadorModel>
 
 @{
     ViewBag.Title = "Criação Ficha Jogador";
@@ -9,62 +10,69 @@
         color: white;
     }
 
-    .btn-primary, btn, btn-large, .btn-primary:active, .btn-primary:visited {
+    .btn-dark, btn, btn-large, .btn-dark:active, .btn-dark:visited {
         background-color: #ECDEDE;
         color: black;
         border-color: white;
     }
 
-        .btn-primary:hover {
+        .btn-dark:hover {
             background-color: #272121;
             color: #ECDEDE;
             border-color: white;
         }
+
+        .link {
+            color: white;
+            padding: 500px;
+        }
 </style>
-                          <h2>Criação Ficha de Jogador</h2>
+<h2>Criação Ficha de Jogador</h2>
 
-                          <p>
-                              @Html.ActionLink("Novo Jogador", "Create")
-                          </p>
-                          <table class="table">
-                              <tr>
-                                  <th>
-                                      @Html.DisplayNameFor(model => model.Nome)
-                                  </th>
-                                  <th>
-                                      @Html.DisplayNameFor(model => model.Celular)
-                                  </th>
-                                  <th>
-                                      @Html.DisplayNameFor(model => model.Email)
-                                  </th>
-                                  <th>
-                                      @Html.DisplayNameFor(model => model.Personagem)
-                                  </th>
-                                  <th></th>
-                              </tr>
+<p>
+    @*@Html.ActionLink("Novo Jogador", "Create", new { @class = "link" })*@
+    <a href="/jogador/create" class="btn btn-dark">Adicionar</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Celular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Personagem)
+        </th>
+        <th></th>
+    </tr>
 
-                              @foreach (var item in Model) {
-                              <tr>
-                                  <td>
-                                      @Html.DisplayFor(modelItem => item.Nome)
-                                  </td>
-                                  <td>
-                                      @Html.DisplayFor(modelItem => item.Celular)
-                                  </td>
-                                  <td>
-                                      @Html.DisplayFor(modelItem => item.Email)
-                                  </td>
-                                  <td>
-                                      @Html.DisplayFor(modelItem => item.Personagem)
-                                  </td>
-                                  <td>
-                                      @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-primary btn-large" })|
-                                      @Html.ActionLink("Detalhes", "Details", new { id = item.Id }, new { @class = "btn btn-primary btn-large" })|
-                                      @Html.ActionLink("Deletar", "Delete", new { id = item.Id }, new { @class = "btn btn-primary btn-large" })
-                                  </td>
-                              </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Celular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Personagem)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-dark btn-large" })|
+                @Html.ActionLink("Detalhes", "Details", new { id = item.Id }, new { @class = "btn btn-dark btn-large" })|
+                @Html.ActionLink("Deletar", "Delete", new { id = item.Id }, new { @class = "btn btn-dark btn-large" })
+            </td>
+        </tr>
+    }
 
-                          </table>
-                      
-                          <footer class="navbar-fixed-bottom"><h4><strong>Alunos : Gustavo Baco Manciope e Samuel Esteves Silva</strong></h4></footer>
+</table>
+
+<footer class="navbar-fixed-bottom"><h4><strong>Alunos : Gustavo Baco Manciope e Samuel Esteves Silva</strong></h4></footer>

@@ -9,13 +9,13 @@
         color: white;
     }
 
-    .btn-primary, btn, btn-large, .btn-primary:active .btn-primary:visited {
+    .btn-dark, btn, btn-large, .btn-dark:active .btn-dark:visited {
         background-color: #ECDEDE;
         color: black;
         border-color: white;
     }
 
-        .btn-primary:hover {
+        .btn-dark:hover {
             background-color: #272121;
             color: #ECDEDE;
             border-color: white;
@@ -67,15 +67,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Criar" class="btn btn-primary" />
+                <input type="submit" value="Criar" class="btn btn-dark" />
+                <a href="/classe/index" class="btn btn-dark">Voltar</a>
             </div>
         </div>
     </div>
 }
 
-<div>
-    @Html.ActionLink("Voltar", "Index")
-</div>
+
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

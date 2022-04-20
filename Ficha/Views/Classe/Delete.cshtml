@@ -9,13 +9,13 @@
         color: white;
     }
 
-    .btn-primary, btn, btn-large, .btn-primary:active .btn-primary:visited {
+    .btn-dark, btn, btn-large, .btn-dark:active .btn-dark:visited {
         background-color: #ECDEDE;
         color: black;
         border-color: white;
     }
 
-        .btn-primary:hover {
+        .btn-dark:hover {
             background-color: #272121;
             color: #ECDEDE;
             border-color: white;
@@ -66,8 +66,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Deletar" class="btn btn-primary" /> |
-            @Html.ActionLink("Voltar", "Index" )
+            <input type="submit" value="Deletar" class="btn btn-dark" /> |
+            <a href="/classe/index" class="btn btn-dark">Voltar</a>
         </div>
     }
 </div>
